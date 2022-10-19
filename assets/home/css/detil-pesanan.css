@@ -1,0 +1,24 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(224, 215, 208);
+}
+
+.detilpesanan h3{
+text-align: center;
+}
+
+.detilpesanan{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: rgba(208, 243, 176, 0.548);
+    border-radius: 10px;
+    box-shadow: rgb(38,57,77) 0px 20px 30px -10px;
+}
+
+
