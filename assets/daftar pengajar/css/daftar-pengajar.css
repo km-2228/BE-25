@@ -1,0 +1,35 @@
+#zIndexHigh {
+	z-index: 99;
+}
+
+nav {
+	background-image: linear-gradient(to bottom, rgba(4, 255, 0, 0.363) 0%, rgba(0, 0, 0, 0.387) 100%);
+}
+
+img[alt="Logo"] {
+	border-radius: 20px;
+	object-fit: contain;
+	background-position: center;
+	overflow: hidden;
+}
+
+.carousel-item {
+	z-index: 2;
+	opacity: 0.4;
+	background-image: linear-gradient(to bottom, rgba(4, 255, 0, 0.363) 0%, rgba(0, 0, 0, 0.387) 100%);
+}
+
+.control {
+	z-index: 3;
+}
+
+.carousel-text {
+	display: inline-block;
+	z-index: 1;
+	color: black;
+	background-color: white;
+}
+
+hr {
+	width: 95%;
+}

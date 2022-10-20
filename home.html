@@ -18,14 +18,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./assets/home/home.css">
+    <link rel="stylesheet" href="./assets/home/css/home.css">
     <title>Ajar.in | Home</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg-transparent text-dark">
-        <div class="container-fluid d-md-flex p-md-2 justify-content-between">
-            <div class="navbar-logo mx-md-3 d-md-flex align-items-center">
+    <nav class="navbar navbar-expand-md text-dark flex-column mb-5">
+        <div class="w-100 d-flex p-md-2 justify-content-between position-fixed">
+            <div class="navbar-logo mx-md-3 d-flex align-items-center">
                 <i class="ri-book-mark-line fs-2 text-dark"></i>
                 <a class="navbar-brand" href="#">Ajar.in</a>
             </div>
@@ -38,7 +38,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav d-flex justify-content-between align-items-center">
                         <li class="nav-item me-md-3">
-                            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                            <a class="nav-link" aria-current="page" href="#">Beranda</a>
                         </li>
                         <li class="nav-item me-md-3">
                             <a class="nav-link" href="#">Pesan Les</a>
@@ -46,14 +46,91 @@
                         <li class="nav-item me-md-3">
                             <a class="nav-link" href="#">Daftar Pesanan</a>
                         </li>
-                        <li class="nav-item dropdown me-md-1">
-                            <i class="ri-user-3-fill border border-dark border-1 rounded-circle fs-5 p-1"></i>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">
+                                <i class="ri-user-3-fill border border-dark border-1 rounded-circle fs-5 p-1"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+        <div class="container-fluid d-flex flex-column text-center align-self-center text-white position-absolute"
+            id="jumbotron">
+            <h1 class="mx-md-2" id="jumbotron-title">Belajar mudah bersama mentor, kapan saja, dan dimana saja</h1>
+            <div class="align-self-center mt-3">
+                <button type="button" class="btn btn-success me-md-3">Get Started</button>
+                <button type="button" class="btn btn-success">Contact Us</button>
+            </div>
+        </div>
     </nav>
+    <main class="mt-md-5">
+        <div class="text-center mt-5 mx-auto mb-5" id="layanan">
+            <div class="mt-md-5" id="judul-layanan">
+                <p id="text-judul-layanan" class="fs-3">Layanan Kami</p>
+            </div>
+            <div id="container-layanan" class="d-flex">
+                <div class="layanan-child" id="pesan-les">
+                    <div class="card elemen-layanan" style="width: 18rem;">
+                        <img src="./assets/home/img/3.pesan-les(credit=pexels.com).jpg" class="card-img-top"
+                            alt="pesan les">
+                        <div class="card-body">
+                            <h5 class="card-title">Pesan les</h5>
+                            <p class="card-text">Pesan les dengan mudah hanya dengan sentuhan jari.</p>
+                            <a href="#" class="btn btn-outline-success">Pesan Les</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="layanan-child" id="les-privat">
+                    <div class="card elemen-layanan" style="width: 18rem;">
+                        <img src="./assets/home/img/4.privat(credit=pexels.com).jpg" classs="card-img-top" alt="privat">
+                        <div class="card-body">
+                            <h5 class="card-title">Les privat</h5>
+                            <p class="card-text">Nikmati konsultasi belajar lebih nyaman dengan mentor.</p>
+                            <a href="#" class="btn btn-outline-success">Pesan Privat</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="layanan-child" id="kelompok-belajar">
+                    <div class="card elemen-layanan" style="width: 18rem;">
+                        <img src="./assets/home/img/2.kelompok-belajar(credit=pexels.com).jpg" class="card-img-top"
+                            alt="kelompok belajar">
+                        <div class="card-body">
+                            <h5 class="card-title">Kelompok belajar</h5>
+                            <p class="card-text">Buat kelompok belajarmu untuk berkembang bersama.</p>
+                            <a href="#" class="btn btn-outline-success">Buat Kelompok Belajar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-md-5 mb-md-5">
+        <div class="w-75 mt-5 text-center mx-auto" id="tentang-container">
+            <div class="mt-5" id="tentang-title">
+                <p class="fs-3 mb-0 mt-md-5" id="tentang-caption">Tentang kami</p>
+            </div>
+            <div id="tentang" class="d-flex mt-3">
+                <div class="flex-50 mx-2 my-auto" id="tentang-left">
+                    <p class="mb-0" id="tentang-left-title">Kami adalah perusahaan yang bergerak di bidang jasa
+                        layanan
+                        pendidikan yang berfokus untuk mempertemukan antara mentor dengan pelajar dengan mudah melalui
+                        sebuah aplikasi.
+                    </p>
+                    <button type="button" class="btn btn-outline-success align-self-centar mt-4">Coba sekarang</button>
+                </div>
+                <div class="mx-2 my-auto" id="tentang-right">
+                    <img id="img-tentang-kami" src="./assets/home/img/5.tentang-kami(credit=pexels.com).jpg"
+                        alt="tentang kami">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-5">
+        <div id="footer-container">
+            <hr class="mx-auto mt-2" style="width: 95%; height: 2px;">
+        </div>
+    </footer>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
