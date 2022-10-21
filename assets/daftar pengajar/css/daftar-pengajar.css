@@ -1,3 +1,7 @@
+* {
+	/* border: 1px solid black; */
+}
+
 #zIndexHigh {
 	z-index: 99;
 }
@@ -13,23 +17,32 @@ img[alt="Logo"] {
 	overflow: hidden;
 }
 
-.carousel-item {
-	z-index: 2;
-	opacity: 0.4;
-	background-image: linear-gradient(to bottom, rgba(4, 255, 0, 0.363) 0%, rgba(0, 0, 0, 0.387) 100%);
+#collapse-container {
+	width: 95%;
 }
 
-.control {
-	z-index: 3;
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
 }
 
-.carousel-text {
-	display: inline-block;
-	z-index: 1;
-	color: black;
-	background-color: white;
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.judul {
+	font-weight: 900;
 }
 
 hr {
 	width: 95%;
+}
+
+.carousel-control {
+	color: black;
+	position: absolute;
+	margin-top: 100px;
+	z-index: 100;
+	width: 40px;
+	height: 50px;
 }
