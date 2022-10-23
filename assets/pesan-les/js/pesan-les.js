@@ -10,10 +10,10 @@ function pesanLes() {
     console.log("clicked")
 
     let formData = {
-        "peserta-les": document.getElementById("pesanles").value,
-        "jenjang-pendidikan": document.getElementById("pendidikan").value,
+        "peserta_les": document.getElementById("pesanles").value,
+        "jenjang_pendidikan": document.getElementById("pendidikan").value,
         topik: document.getElementById("topik").value,
-        "detil-topik": document.getElementById("detil-topik").value,
+        "detil_topik": document.getElementById("detil-topik").value,
         tanggal: document.getElementById("tanggal").value,
         mulai: document.getElementById("jam-mulai").value,
         selesai: document.getElementById("jam-selesai").value,
